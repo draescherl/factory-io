@@ -7,10 +7,12 @@ connection_ok = client.open()
 if not connection_ok:
     print('[ERROR] Could not connect to host.')
 
+    
 SENSOR_A = 0
 SENSOR_B = 1
 CONVEYOR = 0
 CONVEYOR_SPEED = 700
+
 
 # Reset conveyor when driver starts
 client.write_single_register(CONVEYOR, 0)
